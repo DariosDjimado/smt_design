@@ -1,0 +1,70 @@
+/* line 6, ../sass/style.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* line 11, ../sass/style.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* line 17, ../sass/style.scss */
+.main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 24, ../sass/style.scss */
+.card {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+}
+
+/* line 30, ../sass/style.scss */
+.levels {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  text-align: center;
+}
+/* line 39, ../sass/style.scss */
+.levels span {
+  color: #f5f5f5;
+}
+
+/* line 45, ../sass/style.scss */
+.card_level1 {
+  width: 100%;
+  height: 100%;
+  background-color: #5fbcd3;
+}
+
+/* line 50, ../sass/style.scss */
+.card_level2 {
+  background-color: #37abc8;
+  width: 75%;
+  height: 75%;
+}
+
+/* line 55, ../sass/style.scss */
+.card_level3 {
+  background-color: #2c89a0;
+  width: 50%;
+  height: 50%;
+}
+
+/* line 60, ../sass/style.scss */
+.card_level4 {
+  background-color: #216778;
+  width: 25%;
+  height: 25%;
+}
