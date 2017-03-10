@@ -1,0 +1,98 @@
+/* line 9, ../sass/style.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* line 14, ../sass/style.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* line 20, ../sass/style.scss */
+.main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 27, ../sass/style.scss */
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
+  height: 250px;
+  overflow: hidden;
+}
+/* line 37, ../sass/style.scss */
+.card .card__left, .card .card__right {
+  width: 50%;
+  height: 100%;
+}
+/* line 41, ../sass/style.scss */
+.card:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 40%;
+  height: 100%;
+  background-color: #ff6600;
+}
+/* line 51, ../sass/style.scss */
+.card:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 40%;
+  height: 100%;
+  background-color: #008080;
+}
+
+/* line 61, ../sass/style.scss */
+.card__left {
+  color: #f5f5f5;
+  background-color: #ff6600;
+  transform: skewX(-20deg);
+  overflow: hidden;
+}
+/* line 67, ../sass/style.scss */
+.card__left .card_left_title {
+  text-align: center;
+}
+
+/* line 72, ../sass/style.scss */
+.card__right {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 50;
+  background-color: #008080;
+  transform: skewX(-20deg);
+  overflow: hidden;
+  padding-left: 10%;
+}
+/* line 83, ../sass/style.scss */
+.card__right span {
+  margin: 0;
+  padding-left: 10%;
+  width: 100%;
+  height: 10%;
+  display: block;
+}
+/* line 90, ../sass/style.scss */
+.card__right strong {
+  height: 50%;
+  color: #f5f5f5;
+  line-height: 50px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 10em;
+}
