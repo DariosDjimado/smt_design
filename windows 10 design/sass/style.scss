@@ -1,0 +1,192 @@
+$nav_width1:75%;
+$programs_width: 280px;
+$pined_width: 350px;
+$main_icons_width: 50px;
+
+*{
+	box-sizing: border-box;
+}
+
+html,body{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+
+	background-color: bisque;
+
+}
+
+nav{
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    opacity:0;
+    color: white;
+    padding-top: 10px;
+   
+    left:0;
+    bottom: 40px;
+    
+    height: 90%;
+    transition: opacity 0.1s linear;
+    background-color: rgba(0,0,0,.7);
+    & > div{
+        
+        height: 100%;
+    }
+}
+.main_icons{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: $main_icons_width;
+    
+    & .expand{
+        width: 100%;
+        height: 50px;
+        background-color: red;
+    }
+    
+    & .utilities{
+        align-self: flex-end;
+        
+        
+        width: 100%;
+        height: 50%;
+        background-color: aquamarine;
+    }
+}
+.pined{
+    width: $pined_width;
+    height: 100%;
+    overflow:hidden;
+    
+    &:hover{
+        overflow-y: scroll;
+    }
+    
+    & .categories{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+        
+        
+        margin: 10px 1px;
+       width: 94%;
+       height: 200px;
+       
+        
+        & .app{
+           background-color: #3771c8;
+            width: 32%;
+            height: 45%;
+        }
+    }
+    
+    
+   
+}
+.programs{
+    width: $programs_width;
+    padding: 5px;
+    overflow: hidden;
+    
+    &:hover {
+        overflow-y: scroll;
+    }
+    
+    & .applist{
+        
+        width: 93%;
+        height: 40px;
+        margin: 5px;
+        background-color: burlywood;
+    }
+    
+   
+}
+
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    opacity:0.9;
+    
+    width: 100%;
+    height: 40px;
+    
+    background-color: #000000;
+    
+    & .windows_icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 100%;
+        overflow: hidden;
+        
+        
+        
+        & .icon{
+            width: 25px;
+            height: 25px;
+            background-color: #f5f5f5;
+            overflow: hidden;
+
+            &:before,&:after{
+                content:"";
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                background-color: #000000; 
+            }
+            &:before{
+                top: -15px;
+                transform: skewY(-10deg)
+            }
+            &:after{
+                bottom: -15px;
+                transform: skewY(10deg)
+            }
+
+            & .icon_x{            
+                &:before,&:after{
+                    content: "";
+                    position: absolute;
+                    background-color:#000000;
+                }
+                &:before{
+                    top: 7px;
+                    left: 18px;
+                    width: 2px;
+                    height: 25px;
+                }
+                &:after{
+                    top: 20px;
+                    width: 25px;
+                    height: 2px;
+                }
+
+            }
+        }
+        
+    }
+    
+
+}
