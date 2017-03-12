@@ -1,0 +1,59 @@
+/* line 4, ../sass/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 8, ../sass/style.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 15, ../sass/style.scss */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 21, ../sass/style.scss */
+.card {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  width: 250px;
+  height: 100px;
+  padding: 5px 5px;
+  border-radius: 2px;
+  background-color: #0088aa;
+  color: #ececec;
+}
+/* line 36, ../sass/style.scss */
+.card .card_header span {
+  line-height: 13px;
+  font-size: 14px;
+}
+/* line 43, ../sass/style.scss */
+.card .card_body p {
+  margin: 0;
+  padding: 5px 2px 2px 20px;
+  color: #b7c4c8;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: 300;
+}
+/* line 55, ../sass/style.scss */
+.card .card_footer {
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  padding: 0 15px 0 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: 700;
+}

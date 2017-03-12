@@ -1,0 +1,75 @@
+$card_width: 250px;
+$card_height: 100px;
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    width: $card_width;
+    height: $card_height;
+    padding: 5px 5px;
+    border-radius: 2px;
+    background-color: #0088aa;
+    color: #ececec;
+    
+    
+    & .card_header{
+        
+        & span{
+            line-height: 13px;
+            font-size: 14px;
+        }
+    }
+    
+    & .card_body{
+        & p{
+            margin: 0;
+            padding: 5px 2px 2px 20px;;
+            color: #b7c4c8;
+            line-height: 14px;
+            font-size: 14px;
+            font-weight: 300;
+            
+        }
+
+        
+    }
+    & .card_footer{
+        position: absolute;
+        bottom: 2px;
+        width: 100%;
+        padding: 0 15px 0 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        
+        line-height: 14px;
+        font-size: 14px;
+        font-weight: 700;
+        & .card_footer_ref{
+            
+        }
+        & .card_footer_year{
+            
+        }
+        
+    }
+}
